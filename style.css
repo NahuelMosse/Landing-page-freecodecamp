@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.amd.com/system/files/2020-07/489185-threadripper-pro-chip-1920x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -600px;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: white;
+}
+
+@media (min-width: 1200px), (max-height: 600px) {
+    html, body {
+        background-position-x: 0;
+    }
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: calc(100% - 60px);
+    height: 50px;
+    padding: 30px;
+    background-color: white;
+    z-index: 2;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-left: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header img {
+    height: 50px;
+}
+
+#home h1 {
+    text-align: center;
+    margin-top: 350px;
+    font-size: 6rem;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#about {
+    margin: 300px 0 150px 0;
+    padding: 100px 10px 150px 10px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transform: skewY(10deg);
+}
+
+#about h3 {
+    font-size: 2rem;
+    transform: skewY(-10deg);
+}
+
+#about p {
+    text-align: justify;
+    margin: 30px auto;
+    max-width: 900px;
+    transform: skewY(-10deg);
+}
+
+iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    transform: skewY(-10deg);
+}
+
+@media (min-width: 1200px)  {
+    #about {
+        transform: skewY(0);
+        padding: 50px 10px 50px 10px;
+    }
+
+    #about h3 {
+        transform: skewY(0);
+    }
+
+    #about p {
+        transform: skewY(0);
+    }
+
+    iframe {
+        transform: skewY(0);
+    }
+}
+
+#products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#products div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#products div:hover {
+    transform: scale(1.03);
+}
+
+#products div h6 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+#products div p {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+button {
+    margin: 30px 90px;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: greenyellow;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(137, 204, 37);
+}
+
+#products div img {
+    width: auto;
+    height: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer label {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 5px auto;
+    border-style: none;
+    background-color: greenyellow;
+    border-radius: 2px;
+}
+
+input {
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+input:hover {
+    background-color: rgb(137, 204, 37);
+}
+
+input::placeholder {
+    text-align: center;
+}
